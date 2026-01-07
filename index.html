@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Job & Internship Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎓 Student Job & Internship Tracker</h1>
+
+    <form id="jobForm">
+        <input type="text" id="company" placeholder="Company Name" required>
+        <input type="text" id="position" placeholder="Position" required>
+
+        <select id="status">
+            <option value="Applied">Applied</option>
+            <option value="Interview">Interview</option>
+            <option value="Offer">Offer</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+
+        <button type="submit">Add Application</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="jobList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
